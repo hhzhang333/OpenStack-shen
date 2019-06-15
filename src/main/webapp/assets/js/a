@@ -1,0 +1,102 @@
+
+/* gettext library */
+
+var catalog = new Array();
+
+function pluralidx(n) {
+  var v=0;
+  if (typeof(v) == 'boolean') {
+    return v ? 1 : 0;
+  } else {
+    return v;
+  }
+}
+catalog['Displaying %s item'] = [''];
+catalog['Additional information here...'] = '\u5728\u8fd9\u91cc\u5199\u5165\u5176\u4ed6\u4fe1\u606f...';
+catalog['An error occurred while updating.'] = '\u66f4\u65b0\u65f6\u53d1\u751f\u9519\u8bef\u3002';
+catalog['An error occurred. Please try again later.'] = '\u53d1\u751f\u9519\u8bef\u3002\u8bf7\u7a0d\u540e\u91cd\u8bd5\u3002';
+catalog['Cancel'] = '\u53d6\u6d88';
+catalog['Confirm %s'] = '\u786e\u8ba4 %s';
+catalog['Displaying %s item'][0] = '\u663e\u793a%s\u4e2a\u6761\u76ee';
+catalog['Filter'] = '\u7b5b\u9009';
+catalog['Loading'] = '\u52a0\u8f7d\u4e2d';
+catalog['No roles'] = '\u4e0d\u5b58\u5728\u4efb\u4f55\u89d2\u8272';
+catalog['Passwords do not match.'] = '\u5bc6\u7801\u4e0d\u5339\u914d\u3002';
+catalog['Please confirm your selection. This action cannot be undone.'] = '\u8bf7\u786e\u8ba4\u60a8\u7684\u9009\u62e9\u3002\u8fd9\u4e2a\u52a8\u4f5c\u4e0d\u80fd\u64a4\u6d88';
+catalog['There was a problem communicating with the server, please try again.'] = '\u4e0e\u670d\u52a1\u5668\u901a\u4fe1\u51fa\u73b0\u95ee\u9898\uff0c\u8bf7\u518d\u8bd5\u4e00\u6b21\u3002';
+catalog['There was an error submitting the form. Please try again.'] = '\u5728\u63d0\u4ea4\u8868\u5355\u7684\u65f6\u5019\u51fa\u73b0\u9519\u8bef\uff0c\u8bf7\u518d\u6b21\u5c1d\u8bd5';
+catalog['Working'] = '\u52a0\u5de5';
+catalog['You have selected %s. '] = '\u4f60\u5df2\u7ecf\u9009\u62e9\u4e86 %s \u3002 ';
+
+
+function gettext(msgid) {
+  var value = catalog[msgid];
+  if (typeof(value) == 'undefined') {
+    return msgid;
+  } else {
+    return (typeof(value) == 'string') ? value : value[0];
+  }
+}
+
+function ngettext(singular, plural, count) {
+  value = catalog[singular];
+  if (typeof(value) == 'undefined') {
+    return (count == 1) ? singular : plural;
+  } else {
+    return value[pluralidx(count)];
+  }
+}
+
+function gettext_noop(msgid) { return msgid; }
+
+function pgettext(context, msgid) {
+  var value = gettext(context + '\x04' + msgid);
+  if (value.indexOf('\x04') != -1) {
+    value = msgid;
+  }
+  return value;
+}
+
+function npgettext(context, singular, plural, count) {
+  var value = ngettext(context + '\x04' + singular, context + '\x04' + plural, count);
+  if (value.indexOf('\x04') != -1) {
+    value = ngettext(singular, plural, count);
+  }
+  return value;
+}
+
+function interpolate(fmt, obj, named) {
+  if (named) {
+    return fmt.replace(/%\(\w+\)s/g, function(match){return String(obj[match.slice(2,-2)])});
+  } else {
+    return fmt.replace(/%s/g, function(match){return String(obj.shift())});
+  }
+}
+
+/* formatting library */
+
+var formats = new Array();
+
+formats['DATETIME_FORMAT'] = 'N j, Y, P';
+formats['DATE_FORMAT'] = 'N j, Y';
+formats['DECIMAL_SEPARATOR'] = '.';
+formats['MONTH_DAY_FORMAT'] = 'F j';
+formats['NUMBER_GROUPING'] = '0';
+formats['TIME_FORMAT'] = 'P';
+formats['FIRST_DAY_OF_WEEK'] = '0';
+formats['TIME_INPUT_FORMATS'] = ['%H:%M:%S', '%H:%M'];
+formats['THOUSAND_SEPARATOR'] = ',';
+formats['DATE_INPUT_FORMATS'] = ['%Y-%m-%d', '%m/%d/%Y', '%m/%d/%y', '%b %d %Y', '%b %d, %Y', '%d %b %Y', '%d %b, %Y', '%B %d %Y', '%B %d, %Y', '%d %B %Y', '%d %B, %Y'];
+formats['YEAR_MONTH_FORMAT'] = 'F Y';
+formats['SHORT_DATE_FORMAT'] = 'm/d/Y';
+formats['SHORT_DATETIME_FORMAT'] = 'm/d/Y P';
+formats['DATETIME_INPUT_FORMATS'] = ['%Y-%m-%d %H:%M:%S', '%Y-%m-%d %H:%M:%S.%f', '%Y-%m-%d %H:%M', '%Y-%m-%d', '%m/%d/%Y %H:%M:%S', '%m/%d/%Y %H:%M:%S.%f', '%m/%d/%Y %H:%M', '%m/%d/%Y', '%m/%d/%y %H:%M:%S', '%m/%d/%y %H:%M:%S.%f', '%m/%d/%y %H:%M', '%m/%d/%y'];
+
+function get_format(format_type) {
+    var value = formats[format_type];
+    if (typeof(value) == 'undefined') {
+      return format_type;
+    } else {
+      return value;
+    }
+}

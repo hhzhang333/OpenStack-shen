@@ -1,0 +1,12 @@
+INSERT INTO shendian.whole_efficiency_grade (Id, grade, time) VALUES (1, 0.95, '2018-03-08 14:26:36');
+INSERT INTO shendian.whole_efficiency_grade (Id, grade, time) VALUES (2, 0.65, '2018-03-08 16:21:16');
+INSERT INTO shendian.whole_efficiency_grade (Id, grade, time) VALUES (3, 0.89, '2018-03-08 16:25:49');
+INSERT INTO shendian.whole_efficiency_grade (Id, grade, time) VALUES (4, 0.65, '2018-03-08 16:29:27');
+INSERT INTO shendian.whole_efficiency_grade (Id, grade, time) VALUES (5, 0.89, '2018-03-08 16:30:43');
+INSERT INTO shendian.whole_efficiency_grade (Id, grade, time) VALUES (6, 0.95, '2018-03-08 16:47:35');
+INSERT INTO shendian.whole_efficiency_grade (Id, grade, time) VALUES (7, 0.95, '2018-03-08 16:54:58');
+INSERT INTO shendian.whole_efficiency_grade (Id, grade, time) VALUES (8, 0.65, '2018-03-09 04:45:11');
+INSERT INTO shendian.whole_efficiency_grade (Id, grade, time) VALUES (9, 0.89, '2018-03-09 04:46:41');
+INSERT INTO shendian.whole_efficiency_grade (Id, grade, time) VALUES (10, 0.89, '2018-03-09 04:49:35');
+INSERT INTO shendian.whole_efficiency_grade (Id, grade, time) VALUES (11, 0.95, '2018-03-09 04:54:47');
+INSERT INTO shendian.whole_efficiency_grade (Id, grade, time) VALUES (12, 0.95, '2018-03-09 04:55:46');

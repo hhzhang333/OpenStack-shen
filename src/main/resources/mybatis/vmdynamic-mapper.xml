@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.edu.seu.openstack.dao.VMDynamicDao">
+    <select id="selectVMDynamic" resultType="cn.edu.seu.openstack.domain.VMDynamic">
+      SELECT id, name, cpu_utilization as cpuUtilization, mem_utilization as memUtilization, bandwidth_uplink as bandwidthUplink, bandwidth_downlink as bandwidthDownlink, time, ip_addr as ipAddr, vm_id as vmId
+      FROM vm_dynamic_record ORDER by TIME DESC limit 5000
+    </select>
+
+    <select id="selectMostRecentVMCount" resultType="cn.edu.seu.openstack.domain.VMDynamic">
+      SELECT id, name, cpu_utilization as cpuUtilization, mem_utilization as memUtilization, bandwidth_uplink as bandwidthUplink, bandwidth_downlink as bandwidthDownlink, time, ip_addr as ipAddr, vm_id as vmId
+      FROM vm_dynamic_record ORDER by TIME DESC limit #{count}
+    </select>
+</mapper>

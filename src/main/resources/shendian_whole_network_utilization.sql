@@ -1,0 +1,2 @@
+INSERT INTO shendian.whole_network_utilization (Id, network_utilization, time) VALUES (1, 1, '2018-03-08 03:34:52');
+INSERT INTO shendian.whole_network_utilization (Id, network_utilization, time) VALUES (2, 0.56, '2018-03-09 01:10:55');

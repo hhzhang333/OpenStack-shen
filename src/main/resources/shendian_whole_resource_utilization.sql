@@ -1,0 +1,13 @@
+INSERT INTO shendian.whole_resource_utilization (Id, utilization, time) VALUES (1, 0.8, '2018-03-08 14:24:52');
+INSERT INTO shendian.whole_resource_utilization (Id, utilization, time) VALUES (2, 0.8, '2018-03-08 14:26:36');
+INSERT INTO shendian.whole_resource_utilization (Id, utilization, time) VALUES (3, 0.7, '2018-03-08 16:21:16');
+INSERT INTO shendian.whole_resource_utilization (Id, utilization, time) VALUES (4, 0.9, '2018-03-08 16:25:49');
+INSERT INTO shendian.whole_resource_utilization (Id, utilization, time) VALUES (5, 0.7, '2018-03-08 16:29:27');
+INSERT INTO shendian.whole_resource_utilization (Id, utilization, time) VALUES (6, 0.9, '2018-03-08 16:30:42');
+INSERT INTO shendian.whole_resource_utilization (Id, utilization, time) VALUES (7, 0.8, '2018-03-08 16:47:35');
+INSERT INTO shendian.whole_resource_utilization (Id, utilization, time) VALUES (8, 0.8, '2018-03-08 16:54:58');
+INSERT INTO shendian.whole_resource_utilization (Id, utilization, time) VALUES (9, 0.7, '2018-03-09 04:45:10');
+INSERT INTO shendian.whole_resource_utilization (Id, utilization, time) VALUES (10, 0.9, '2018-03-09 04:46:41');
+INSERT INTO shendian.whole_resource_utilization (Id, utilization, time) VALUES (11, 0.9, '2018-03-09 04:49:35');
+INSERT INTO shendian.whole_resource_utilization (Id, utilization, time) VALUES (12, 0.8, '2018-03-09 04:54:47');
+INSERT INTO shendian.whole_resource_utilization (Id, utilization, time) VALUES (13, 0.8, '2018-03-09 04:55:46');

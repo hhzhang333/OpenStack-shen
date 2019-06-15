@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.edu.seu.openstack.dao.WholeCpuLoadDao">
+    <select id="selectCpuLoad" resultType="cn.edu.seu.openstack.domain.WholeCpuLoad">
+        SELECT id, cpu_load, time
+        FROM whole_cpu_load_record
+        ORDER by time DESC limit 15
+    </select>
+</mapper>

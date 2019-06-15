@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.edu.seu.openstack.dao.PhysicalMachineTemperatureDao">
+    <select id="selectPhysicalMachineTemperature" resultType="cn.edu.seu.openstack.domain.PhysicalMachineTemperature">
+        SELECT id, ip_addr, t1, t2, t3, t4, time
+        FROM physical_machine_temperature_record
+        WHERE ip_addr = #{ipAddr}
+        limit 5000
+    </select>
+</mapper>

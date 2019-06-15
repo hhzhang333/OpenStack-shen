@@ -1,0 +1,6 @@
+INSERT INTO shendian.whole_energy_consumption_record (Id, energy_sum, energy_cpu, energy_mem, energy_net, energy_disk, energy_cooling, time) VALUES (1, 1825.6, 138.9, 148.8, 259.6, 51.2, 55.1, '2018-03-09 03:06:05');
+INSERT INTO shendian.whole_energy_consumption_record (Id, energy_sum, energy_cpu, energy_mem, energy_net, energy_disk, energy_cooling, time) VALUES (2, 1924.6, 256.3, 186.9, 196.3, 56.3, 56.3, '2018-03-09 03:06:09');
+INSERT INTO shendian.whole_energy_consumption_record (Id, energy_sum, energy_cpu, energy_mem, energy_net, energy_disk, energy_cooling, time) VALUES (3, 1258.6, 253.2, 189.6, 212.3, 59.3, 56.2, '2018-03-09 03:06:28');
+INSERT INTO shendian.whole_energy_consumption_record (Id, energy_sum, energy_cpu, energy_mem, energy_net, energy_disk, energy_cooling, time) VALUES (4, 15.609829, 8.3, 7.308417, 0.001412, 0, 0, '2018-03-11 07:25:41');
+INSERT INTO shendian.whole_energy_consumption_record (Id, energy_sum, energy_cpu, energy_mem, energy_net, energy_disk, energy_cooling, time) VALUES (5, 14.707513, 7.4, 7.306105, 0.001408, 0, 0, '2018-03-11 07:29:20');
+INSERT INTO shendian.whole_energy_consumption_record (Id, energy_sum, energy_cpu, energy_mem, energy_net, energy_disk, energy_cooling, time) VALUES (6, 13.607475, 6.3, 7.305741, 0.001734, 0, 0, '2018-03-11 07:31:35');

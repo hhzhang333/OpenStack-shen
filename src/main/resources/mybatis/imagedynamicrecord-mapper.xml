@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.edu.seu.openstack.dao.ImageDynamicDao">
+    <select id="selectImageDynamic" resultType="cn.edu.seu.openstack.domain.ImageDynamic">
+        SELECT id, replica_factor_max as replicaFactorMax, replica_factor_avg as replicaFactorAvg, hot_image_trans_rate as hotImageTransRate, cold_image_trans_rate as coldImageTransRate, time
+        FROM image_dynamic_record ORDER by time desc limit 12
+    </select>
+</mapper>

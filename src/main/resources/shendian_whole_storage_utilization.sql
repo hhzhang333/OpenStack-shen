@@ -1,0 +1,1 @@
+INSERT INTO shendian.whole_storage_utilization (Id, storage_utilization, time) VALUES (1, 0.88, '2018-03-08 14:55:06');

@@ -1,0 +1,145 @@
+
+.sx-2 {
+    width: 19%;
+    float: left;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1);
+}
+
+.sx-margin {
+    margin-left: 40px;
+}
+
+.sx-8 {
+    width: 80%;
+    float: left;
+    background: #f2f2f2;
+}
+
+.sx-5 {
+    width: 48%;
+    float: left;
+    background: #f2f2f2;
+}
+
+.sx-6 {
+    width: 58%;
+    float: left;
+    background: #f2f2f2;
+}
+
+.sx-3 {
+    width: 27%;
+    float: left;
+    background: #f2f2f2;
+}
+
+.sx-7 {
+    width: 68%;
+    float: left;
+    background: #f2f2f2;
+}
+
+.sx-4 {
+    width: 37%;
+    float: left;
+    background: #f2f2f2;
+}
+
+.sx-10 {
+    width: 100%;
+    float: left;
+    background: #f2f2f2;
+}
+
+.di-container {
+    margin: auto;
+}
+
+.graph-border {
+    border: 1px #ddd;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 4px 4px 0 0;
+    margin: 15px;
+}
+
+.graph-s-double {
+    width: 40%;
+    float: left;
+    height: 320px
+}
+
+.graph-header {
+    color: #333;
+    border: 1px solid #C2C2C2;
+    background: #fafafa;
+    padding: 5px;
+}
+
+.graph-container {
+    padding: 10px;
+    height: 150px;
+}
+
+.double-graph-container {
+    height: 200px;
+}
+
+.graph-table {
+    padding: 10px;
+}
+
+.graph-text {
+    width: 30%;
+    float: left;
+    /*margin-top: 22%;*/
+    margin-left: 15%;
+}
+
+.graph-text > span {
+    background-color: white;
+}
+
+.graph-text-right {
+    margin-top: 10%;
+    margin-left: -2%;
+    width: 24%;
+}
+
+#graph-text {
+    width: 24%;
+    margin-left: 5%;
+}
+
+#graph-text-right {
+    width: 51%;
+    margin-left: -5%;
+}
+
+#graph-text > span {
+    width: 100%;
+    font-size: 17px;
+    text-align: left;
+    background: white;
+}
+
+#graph-text-right > span {
+    width: 100%;
+    font-size: 17px;
+    text-align: left;
+}
+
+
+.graph-container > span {
+    text-align: right;
+    font-size: 20px;
+    margin: 5px;
+}
+
+.graph-text > span {
+    text-align: left;
+}
+
+.table_wrapper > tfoot {
+    background: white;
+}

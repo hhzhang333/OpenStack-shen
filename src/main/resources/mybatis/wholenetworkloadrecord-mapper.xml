@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.edu.seu.openstack.dao.WholeNetworkLoadDao">
+    <select id="selectNetworkLoad" resultType="cn.edu.seu.openstack.domain.WholeNetworkLoad">
+        SELECT *
+        FROM whole_network_load_record
+        ORDER by time desc limit 15
+    </select>
+
+
+</mapper>
